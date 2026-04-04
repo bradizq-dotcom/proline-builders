@@ -51,7 +51,12 @@ export default function WorkWithUs() {
   return (
     <div className="min-h-screen bg-slate-50 pt-24 pb-16">
       <div className="max-w-3xl mx-auto px-6">
-        <div className="text-center mb-8">
+        <div className="text-center mb-4">
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <span className="text-xs font-bold uppercase tracking-widest text-blue-700">EN</span>
+            <span className="text-slate-300">|</span>
+            <a href="/es/work-with-us" className="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-slate-600 transition-colors">ES</a>
+          </div>
           <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">Subcontractor Portal</span>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-slate-900 uppercase mt-2">Work With Us</h1>
           <p className="text-slate-500 mt-3 max-w-lg mx-auto">Pro-Line Builders partners with qualified subcontractors across Florida and Nashville. Submit your information below to be considered for upcoming projects.</p>
