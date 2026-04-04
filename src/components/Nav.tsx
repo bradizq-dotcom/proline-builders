@@ -20,6 +20,7 @@ export default function Nav() {
     { label: 'Projects', href: '/projects' },
     { label: 'About', href: '/about' },
     { label: 'Process', href: '/process' },
+    { label: 'Work With Us', href: '/work-with-us' },
     { label: 'Contact', href: '/contact' },
   ]
 

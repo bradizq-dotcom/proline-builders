@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Phone, Mail, MapPin, Menu, X, ChevronDown, Shield, HardHat, Building2, Users, Clock, CheckCircle2, ArrowRight, Star, Zap, Award, FileText, Hammer, Ruler, Truck, ArrowUpRight } from 'lucide-react'
+import { Phone, Mail, MapPin, Menu, X, ChevronDown, Shield, HardHat, Building2, Users, Clock, CheckCircle2, ArrowRight, Star, Zap, Award, FileText, Hammer, Ruler, Truck, ArrowUpRight, ShieldCheck } from 'lucide-react'
 import Link from 'next/link'
 
 const featuredProjects = [
@@ -215,6 +215,73 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <div className="bg-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">Questions</span>
+            <h2 className="font-display text-4xl font-bold uppercase mt-2">Frequently Asked Questions</h2>
+          </div>
+          <div className="space-y-4">
+            {[
+              { q: "What types of projects do you take on?", a: "We specialize in commercial and multi-family projects — apartment complexes, HOAs, property managers, and developers. Our contracts typically range from $50K to $5M+." },
+              { q: "What is your minimum project size?", a: "Our minimum project size is $50,000. We focus on work that requires professional coordination, permitting, and execution — not small residential jobs." },
+              { q: "Do you handle permitting?", a: "Yes. We manage the full permitting process — permit acquisition, variance handling, and city inspection coordination are all part of our standard project service." },
+              { q: "What areas do you serve?", a: "We work across Florida and have active projects in Nashville, TN. Service area depends on project scope and timeline." },
+              { q: "How long does the process take?", a: "Timeline varies by project. A typical re-roofing project takes 2-6 months from contract to completion. New construction and full GC projects run longer depending on scope." },
+              { q: "Do you work on occupied buildings?", a: "Yes. Tenant-occupied projects are a specialty. We have protocols for working around residents safely and with minimal disruption." },
+            ].map((item, i) => (
+              <div key={i} className="border border-gray-200 rounded-sm p-5">
+                <h3 className="font-display font-bold text-slate-900 mb-2">{item.q}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Licensing Strip */}
+      <div className="bg-blue-950 text-white py-8">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+              <Shield className="w-10 h-10 text-blue-400 mx-auto mb-3" />
+              <h3 className="font-display font-bold text-lg uppercase mb-1">CGC Licensed</h3>
+              <p className="text-blue-300 text-sm">Certified General Contractor</p>
+            </div>
+            <div>
+              <Shield className="w-10 h-10 text-blue-400 mx-auto mb-3" />
+              <h3 className="font-display font-bold text-lg uppercase mb-1">CCC Licensed</h3>
+              <p className="text-blue-300 text-sm">Certified Construction Contractor</p>
+            </div>
+            <div>
+              <ShieldCheck className="w-10 h-10 text-blue-400 mx-auto mb-3" />
+              <h3 className="font-display font-bold text-lg uppercase mb-1">Fully Insured</h3>
+              <p className="text-blue-300 text-sm">Comprehensive Coverage</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Minimum Project Notice */}
+      <div className="bg-slate-900 text-white py-6">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <p className="text-slate-400 text-sm">Our minimum project size is <span className="text-white font-bold">$50,000</span>. We specialize in commercial and multi-family work — property managers, developers, HOAs, and apartment complex owners.</p>
+        </div>
+      </div>
+
+      {/* Client Logos Strip */}
+      <div className="bg-white border-t py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <p className="text-center text-slate-400 text-xs font-bold uppercase tracking-widest mb-8">Trusted by Florida's Leading Property Companies</p>
+          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16 opacity-60 grayscale">
+            {['BH Management', 'American Landmark', 'Bell Partners', 'Greystone & Co', 'Conti Capital', ' Related'].map((name, i) => (
+              <span key={i} className="font-display font-bold text-slate-500 text-lg uppercase tracking-wider">{name}</span>
+            ))}
+          </div>
+        </div>
+      </div>
 
     </div>
   )
