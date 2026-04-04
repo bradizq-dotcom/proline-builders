@@ -1,8 +1,8 @@
-// File: /Users/boyizquierdo/.openclaw/workspace-mark/proline-builders/src/app/get-a-quote/page.tsx
-import * as entry from '../../../../src/app/get-a-quote/page.js'
+// File: /Users/boyizquierdo/.openclaw/workspace-mark/proline-builders/src/app/services/interior-finishes/page.tsx
+import * as entry from '../../../../../src/app/services/interior-finishes/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../src/app/get-a-quote/page.js')
+type TEntry = typeof import('../../../../../src/app/services/interior-finishes/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

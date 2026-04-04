@@ -1,5 +1,8 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/services/project-management/page": "app/services/project-management/page.js",
   "/page": "app/page.js",
   "/work-with-us/page": "app/work-with-us/page.js",
-  "/get-a-quote/page": "app/get-a-quote/page.js"
+  "/services/general-contracting/page": "app/services/general-contracting/page.js",
+  "/services/interior-finishes/page": "app/services/interior-finishes/page.js"
 }

@@ -4,10 +4,10 @@ import { Phone, Mail, MapPin, Menu, X, ChevronDown, Shield, HardHat, Building2, 
 import Link from 'next/link'
 
 const featuredProjects = [
-  { name: 'Mirador at River City', location: 'Jacksonville, FL', type: 'Apartment Complex Re-roofing', scope: '4 Buildings', budget: '$450K', img: '/images/apartment.jpg' },
-  { name: 'St. Pete 2025', location: 'St. Petersburg, FL', type: 'New Construction', scope: 'Ground-Up', budget: '$1.2M', img: '/images/new-construction.jpg' },
-  { name: 'Reunion Crossing', location: 'Kissimmee, FL', type: 'Apartment Complex', scope: 'Full GC', budget: '$890K', img: '/images/apartment.jpg' },
-  { name: 'Polo Glen', location: 'Rockledge, FL', type: 'Multi-building Roofing', scope: 'Roofing Only', budget: '$320K', img: '/images/roofing.jpg' },
+  { name: 'Mirador at River City', location: 'Jacksonville, FL', type: 'Apartment Complex Re-roofing', scope: '4 Buildings', budget: '$450K', img: '/images/mirador.jpg' },
+  { name: 'The Avant at Pembroke Pines', location: 'Pembroke Pines, FL', type: 'Apartment Complex', scope: 'Full GC', budget: '$1.1M', img: '/images/avant-pembroke.jpg' },
+  { name: 'Reunion Crossing', location: 'Kissimmee, FL', type: 'Townhome Complex', scope: 'Full GC', budget: '$890K', img: '/images/reunion-crossing.jpg' },
+  { name: 'Polo Glen', location: 'Rockledge, FL', type: 'Multi-building Roofing', scope: 'Roofing Only', budget: '$320K', img: '/images/polo-glen.jpg' },
 ]
 
 const services = [
@@ -253,7 +253,7 @@ export default function Home() {
             <div>
               <Shield className="w-10 h-10 text-blue-400 mx-auto mb-3" />
               <h3 className="font-display font-bold text-lg uppercase mb-1">CCC Licensed</h3>
-              <p className="text-blue-300 text-sm">Certified Construction Contractor</p>
+              <p className="text-blue-300 text-sm">Certified Roofing Contractor</p>
             </div>
             <div>
               <ShieldCheck className="w-10 h-10 text-blue-400 mx-auto mb-3" />
