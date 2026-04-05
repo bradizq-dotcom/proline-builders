@@ -6,8 +6,8 @@ import { projectsData } from './projectsData'
 export function ProjectCardList() {
   const [filter, setFilter] = useState({ location: '', type: '', budget: '' })
 
-  const allLocations = [...new Set(projectsData.map(p => p.location.split(',')[1]?.trim() || p.location))].filter(Boolean)
-  const allTypes = [...new Set(projectsData.map(p => p.type))]
+  const allLocations = Array.from(new Set(projectsData.map(p => p.location.split(',')[1]?.trim() || p.location))).filter(Boolean)
+  const allTypes = Array.from(new Set(projectsData.map(p => p.type)))
 
   const filtered = projectsData.filter(p => {
     if (filter.location && !p.location.includes(filter.location)) return false
