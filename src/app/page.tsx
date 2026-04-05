@@ -56,7 +56,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg text-blue-100 max-w-xl mb-10 animate-fadeUp delay-100 leading-relaxed">
-              Roofing, general contracting, and project management for Florida's commercial and multi-family sector. Licensed CGC & CCC. $10M+ in completed projects.
+              Roofing, general contracting, and project management for Florida's commercial and multi-family sector. Licensed CGC & CCC.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fadeUp delay-200">
@@ -202,7 +202,7 @@ export default function Home() {
       <section className="py-20 bg-blue-700">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white uppercase mb-4">Have Plans Ready?</h2>
-          <p className="text-blue-100 text-lg max-w-xl mx-auto mb-8">Upload your plans and get a fast, detailed pricing response. We handle projects from $50K to $5M.</p>
+          <p className="text-blue-100 text-lg max-w-xl mx-auto mb-8">Upload your plans and get a fast, detailed pricing response. We handle projects from $50K to $10M+.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/get-a-quote"
               className="flex items-center gap-2 bg-white text-blue-700 hover:bg-blue-50 px-8 py-4 rounded-sm font-bold text-sm uppercase tracking-wider transition-all hover:scale-105">
@@ -225,7 +225,7 @@ export default function Home() {
           </div>
           <div className="space-y-4">
             {[
-              { q: "What types of projects do you take on?", a: "We specialize in commercial and multi-family projects — apartment complexes, HOAs, property managers, and developers. Our contracts typically range from $50K to $5M+." },
+              { q: "What types of projects do you take on?", a: "We specialize in commercial and multi-family projects — apartment complexes, HOAs, property managers, and developers. Our contracts typically range from $50K to $10M+." },
               { q: "What is your minimum project size?", a: "Our minimum project size is $50,000. We focus on work that requires professional coordination, permitting, and execution — not small residential jobs." },
               { q: "Do you handle permitting?", a: "Yes. We manage the full permitting process — permit acquisition, variance handling, and city inspection coordination are all part of our standard project service." },
               { q: "What areas do you serve?", a: "We work across Florida and have active projects in Nashville, TN. Service area depends on project scope and timeline." },
