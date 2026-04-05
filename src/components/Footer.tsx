@@ -75,7 +75,7 @@ export default function Footer() {
             </ul>
             <div className="mt-6 bg-blue-900/50 border border-blue-800 rounded-sm p-4">
               <p className="text-xs text-blue-300 uppercase tracking-wider mb-1">Contract Range</p>
-              <p className="text-white font-bold">$60K – $10M+</p>
+              <p className="text-white font-bold">$50K – $10M+</p>
             </div>
           </div>
         </div>
