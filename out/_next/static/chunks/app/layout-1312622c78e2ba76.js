@@ -1,0 +1,41 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[185],{6781:function(e,t,r){Promise.resolve().then(r.t.bind(r,231,23)),Promise.resolve().then(r.t.bind(r,3054,23)),Promise.resolve().then(r.bind(r,8795))},8030:function(e,t,r){"use strict";r.d(t,{Z:function(){return i}});var s=r(2265);/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let l=e=>e.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),a=function(){for(var e=arguments.length,t=Array(e),r=0;r<e;r++)t[r]=arguments[r];return t.filter((e,t,r)=>!!e&&r.indexOf(e)===t).join(" ")};/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var n={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let o=(0,s.forwardRef)((e,t)=>{let{color:r="currentColor",size:l=24,strokeWidth:o=2,absoluteStrokeWidth:i,className:c="",children:d,iconNode:h,...u}=e;return(0,s.createElement)("svg",{ref:t,...n,width:l,height:l,stroke:r,strokeWidth:i?24*Number(o)/Number(l):o,className:a("lucide",c),...u},[...h.map(e=>{let[t,r]=e;return(0,s.createElement)(t,r)}),...Array.isArray(d)?d:[d]])}),i=(e,t)=>{let r=(0,s.forwardRef)((r,n)=>{let{className:i,...c}=r;return(0,s.createElement)(o,{ref:n,iconNode:t,className:a("lucide-".concat(l(e)),i),...c})});return r.displayName="".concat(e),r}},1976:function(e,t,r){"use strict";r.d(t,{Z:function(){return s}});/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let s=(0,r(8030).Z)("ArrowRight",[["path",{d:"M5 12h14",key:"1ays0h"}],["path",{d:"m12 5 7 7-7 7",key:"xquz4c"}]])},9832:function(e,t,r){"use strict";r.d(t,{Z:function(){return s}});/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let s=(0,r(8030).Z)("Phone",[["path",{d:"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z",key:"foiqr5"}]])},4697:function(e,t,r){"use strict";r.d(t,{Z:function(){return s}});/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let s=(0,r(8030).Z)("X",[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]])},7138:function(e,t,r){"use strict";r.d(t,{default:function(){return l.a}});var s=r(231),l=r.n(s)},8795:function(e,t,r){"use strict";r.d(t,{default:function(){return u}});var s=r(7437),l=r(2265),a=r(8030);/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let n=(0,a.Z)("ChevronDown",[["path",{d:"m6 9 6 6 6-6",key:"qrunsl"}]]);var o=r(1976),i=r(9832),c=r(4697);/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let d=(0,a.Z)("Menu",[["line",{x1:"4",x2:"20",y1:"12",y2:"12",key:"1e0a9i"}],["line",{x1:"4",x2:"20",y1:"6",y2:"6",key:"1owob3"}],["line",{x1:"4",x2:"20",y1:"18",y2:"18",key:"yk5zj1"}]]);var h=r(7138);function u(){let[e,t]=(0,l.useState)(!1),[r,a]=(0,l.useState)(!1),[u,f]=(0,l.useState)(!1);(0,l.useEffect)(()=>{let e=()=>a(window.scrollY>50);return window.addEventListener("scroll",e),()=>window.removeEventListener("scroll",e)},[]);let x=[{label:"Home",href:"/"},{label:"Services",href:"/services",hasDropdown:!0},{label:"Projects",href:"/projects"},{label:"About",href:"/about"},{label:"Process",href:"/process"},{label:"Work With Us",href:"/work-with-us"},{label:"Contact",href:"/contact"}],m=[{label:"Roofing",href:"/services/roofing"},{label:"General Contracting",href:"/services/general-contracting"},{label:"Project Management",href:"/services/project-management"},{label:"Interior & Finishes",href:"/services/interior-finishes"}];return(0,s.jsxs)("nav",{className:"fixed top-0 left-0 right-0 z-50 transition-all duration-300 ".concat(r?"bg-white/95 backdrop-blur-md shadow-lg":"bg-white"),children:[(0,s.jsxs)("div",{className:"max-w-7xl mx-auto px-6 py-4 flex items-center justify-between",children:[(0,s.jsx)(h.default,{href:"/",className:"flex items-center gap-3",children:(0,s.jsx)("img",{src:"/logo.jpg",alt:"Pro-Line Builders",className:"h-14 w-auto object-contain"})}),(0,s.jsx)("div",{className:"hidden lg:flex items-center gap-2",children:x.map(e=>e.hasDropdown?(0,s.jsxs)("div",{className:"relative",onMouseEnter:()=>f(!0),onMouseLeave:()=>f(!1),children:[(0,s.jsxs)("button",{className:"flex items-center gap-1 px-4 py-2 text-sm font-semibold uppercase tracking-wider transition-colors ".concat(r?"text-blue-900 hover:text-blue-600":"text-slate-700 hover:text-blue-700"),children:[e.label," ",(0,s.jsx)(n,{className:"w-4 h-4"})]}),u&&(0,s.jsx)("div",{className:"absolute top-full left-0 bg-white border border-gray-100 shadow-xl rounded-sm py-2 min-w-[200px]",children:m.map(e=>(0,s.jsx)(h.default,{href:e.href,className:"block px-5 py-2.5 text-sm text-slate-700 hover:text-blue-700 hover:bg-blue-50 font-medium transition-colors",children:e.label},e.href))})]},e.href):(0,s.jsx)(h.default,{href:e.href,className:"px-4 py-2 text-sm font-semibold uppercase tracking-wider transition-colors ".concat(r?"text-blue-900 hover:text-blue-600":"text-slate-700 hover:text-blue-700"),children:e.label},e.href))}),(0,s.jsxs)("div",{className:"hidden lg:flex items-center gap-4",children:[(0,s.jsxs)(h.default,{href:"/get-a-quote",className:"flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-sm font-bold text-sm uppercase tracking-wider transition-all",children:["Get a Quote ",(0,s.jsx)(o.Z,{className:"w-4 h-4"})]}),(0,s.jsxs)("a",{href:"tel:7276422953",className:"flex items-center gap-2 font-semibold text-sm transition-colors ".concat(r?"text-blue-900":"text-slate-700"),children:[(0,s.jsx)(i.Z,{className:"w-4 h-4"})," (727) 642-2953"]})]}),(0,s.jsx)("button",{className:"lg:hidden ".concat(r?"text-blue-900":"text-slate-700"),onClick:()=>t(!e),children:e?(0,s.jsx)(c.Z,{size:28}):(0,s.jsx)(d,{size:28})})]}),e&&(0,s.jsxs)("div",{className:"lg:hidden bg-white border-t border-gray-100 px-6 py-6 space-y-1",children:[x.map(e=>e.hasDropdown?(0,s.jsxs)("div",{children:[(0,s.jsx)("button",{className:"block w-full text-left px-4 py-3 text-slate-700 hover:text-blue-700 font-semibold uppercase tracking-wider text-sm",children:e.label}),(0,s.jsx)("div",{className:"pl-6 space-y-1",children:m.map(e=>(0,s.jsx)(h.default,{href:e.href,onClick:()=>t(!1),className:"block py-2 text-slate-500 hover:text-blue-700 text-sm",children:e.label},e.href))})]},e.href):(0,s.jsx)(h.default,{href:e.href,onClick:()=>t(!1),className:"block px-4 py-3 text-slate-700 hover:text-blue-700 font-semibold uppercase tracking-wider text-sm",children:e.label},e.href)),(0,s.jsxs)("div",{className:"pt-4 border-t border-gray-100 mt-4",children:[(0,s.jsx)(h.default,{href:"/get-a-quote",onClick:()=>t(!1),className:"block w-full text-center bg-blue-700 text-white font-bold py-3 rounded-sm text-sm uppercase tracking-wider mb-3",children:"Get a Quote"}),(0,s.jsxs)("a",{href:"tel:7276422953",className:"flex items-center justify-center gap-2 text-slate-700 font-semibold text-sm",children:[(0,s.jsx)(i.Z,{className:"w-4 h-4"})," (727) 642-2953"]})]})]})]})}},3054:function(){}},function(e){e.O(0,[141,231,971,23,744],function(){return e(e.s=6781)}),_N_E=e.O()}]);

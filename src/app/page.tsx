@@ -166,7 +166,7 @@ export default function Home() {
                   { icon: <Building2 className="w-5 h-5" />, text: 'Multi-Building Specialists' },
                   { icon: <Users className="w-5 h-5" />, text: 'Tenant-Occupied Experience' },
                   { icon: <Clock className="w-5 h-5" />, text: 'Fast Permitting' },
-                  { icon: <CheckCircle2 className="w-5 h-5" />, text: '$200K–$10M+ Projects' },
+                  { icon: <CheckCircle2 className="w-5 h-5" />, text: '$50K–$10M+ Projects' },
                   { icon: <Star className="w-5 h-5" />, text: 'Trusted by PM Firms' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 text-sm text-blue-100">
@@ -202,7 +202,7 @@ export default function Home() {
       <section className="py-20 bg-blue-700">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white uppercase mb-4">Have Plans Ready?</h2>
-          <p className="text-blue-100 text-lg max-w-xl mx-auto mb-8">Upload your plans and get a fast, detailed pricing response. We handle everything from $200K to $5M.</p>
+          <p className="text-blue-100 text-lg max-w-xl mx-auto mb-8">Upload your plans and get a fast, detailed pricing response. We handle projects from $50K to $5M.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/get-a-quote"
               className="flex items-center gap-2 bg-white text-blue-700 hover:bg-blue-50 px-8 py-4 rounded-sm font-bold text-sm uppercase tracking-wider transition-all hover:scale-105">

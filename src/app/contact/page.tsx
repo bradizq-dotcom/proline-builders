@@ -221,7 +221,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-white uppercase">Have a Larger Project?</h2>
-            <p className="text-blue-300 mt-2">For projects over $200K, our full quote form captures everything we need for an accurate proposal.</p>
+            <p className="text-blue-300 mt-2">For projects under $50K, call us. Over $50K, use the form., our full quote form captures everything we need for an accurate proposal.</p>
           </div>
           <div className="flex items-center gap-4 flex-shrink-0">
             <Link href="/get-a-quote"

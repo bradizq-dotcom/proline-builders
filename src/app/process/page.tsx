@@ -74,7 +74,7 @@ const differentiators = [
       'Fully licensed in Florida for both General Contracting (CGC) and Roofing (CCC).',
   },
   {
-    title: '$200K–$10M+ Project Focus',
+    title: '$50K–$10M+ Project Focus',
     description:
       'We specialize in mid-market commercial and multi-family projects — right in your wheelhouse.',
   },

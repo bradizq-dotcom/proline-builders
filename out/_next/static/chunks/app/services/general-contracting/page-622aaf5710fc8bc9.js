@@ -1,0 +1,41 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[345],{1649:function(e,t,a){Promise.resolve().then(a.bind(a,3107))},8030:function(e,t,a){"use strict";a.d(t,{Z:function(){return c}});var s=a(2265);/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let r=e=>e.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),l=function(){for(var e=arguments.length,t=Array(e),a=0;a<e;a++)t[a]=arguments[a];return t.filter((e,t,a)=>!!e&&a.indexOf(e)===t).join(" ")};/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var n={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let i=(0,s.forwardRef)((e,t)=>{let{color:a="currentColor",size:r=24,strokeWidth:i=2,absoluteStrokeWidth:c,className:d="",children:o,iconNode:m,...h}=e;return(0,s.createElement)("svg",{ref:t,...n,width:r,height:r,stroke:a,strokeWidth:c?24*Number(i)/Number(r):i,className:l("lucide",d),...h},[...m.map(e=>{let[t,a]=e;return(0,s.createElement)(t,a)}),...Array.isArray(o)?o:[o]])}),c=(e,t)=>{let a=(0,s.forwardRef)((a,n)=>{let{className:c,...d}=a;return(0,s.createElement)(i,{ref:n,iconNode:t,className:l("lucide-".concat(r(e)),c),...d})});return a.displayName="".concat(e),a}},1976:function(e,t,a){"use strict";a.d(t,{Z:function(){return s}});/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let s=(0,a(8030).Z)("ArrowRight",[["path",{d:"M5 12h14",key:"1ays0h"}],["path",{d:"m12 5 7 7-7 7",key:"xquz4c"}]])},4232:function(e,t,a){"use strict";a.d(t,{Z:function(){return s}});/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let s=(0,a(8030).Z)("Building2",[["path",{d:"M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z",key:"1b4qmf"}],["path",{d:"M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2",key:"i71pzd"}],["path",{d:"M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2",key:"10jefs"}],["path",{d:"M10 6h4",key:"1itunk"}],["path",{d:"M10 10h4",key:"tcdvrf"}],["path",{d:"M10 14h4",key:"kelpxr"}],["path",{d:"M10 18h4",key:"1ulq68"}]])},3231:function(e,t,a){"use strict";a.d(t,{Z:function(){return s}});/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let s=(0,a(8030).Z)("CircleCheck",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["path",{d:"m9 12 2 2 4-4",key:"dzmm74"}]])},505:function(e,t,a){"use strict";a.d(t,{Z:function(){return s}});/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let s=(0,a(8030).Z)("HardHat",[["path",{d:"M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v2z",key:"1dej2m"}],["path",{d:"M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5",key:"1p9q5i"}],["path",{d:"M4 15v-3a6 6 0 0 1 6-6",key:"9ciidu"}],["path",{d:"M14 6a6 6 0 0 1 6 6v3",key:"1hnv84"}]])},7138:function(e,t,a){"use strict";a.d(t,{default:function(){return r.a}});var s=a(231),r=a.n(s)},3107:function(e,t,a){"use strict";a.r(t),a.d(t,{default:function(){return o}});var s=a(7437),r=a(7138),l=a(505);/**
+ * @license lucide-react v0.424.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let n=(0,a(8030).Z)("ClipboardList",[["rect",{width:"8",height:"4",x:"8",y:"2",rx:"1",ry:"1",key:"tgr4d6"}],["path",{d:"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2",key:"116196"}],["path",{d:"M12 11h4",key:"1jrz19"}],["path",{d:"M12 16h4",key:"n85exb"}],["path",{d:"M8 11h.01",key:"1dfujw"}],["path",{d:"M8 16h.01",key:"18s6g9"}]]);var i=a(3231),c=a(4232),d=a(1976);function o(){return(0,s.jsxs)("main",{className:"min-h-screen bg-white",children:[(0,s.jsx)("section",{className:"bg-slate-900 text-white",children:(0,s.jsxs)("div",{className:"max-w-6xl mx-auto px-6 py-20",children:[(0,s.jsx)("div",{className:"flex items-center gap-4 mb-6",children:(0,s.jsx)("div",{className:"p-3 bg-[#1a4b8c] rounded-xl",children:(0,s.jsx)(l.Z,{className:"w-8 h-8 text-white"})})}),(0,s.jsx)("h1",{className:"text-4xl md:text-5xl font-bold mb-4",children:"General Contracting"}),(0,s.jsx)("p",{className:"text-xl text-slate-300 max-w-2xl",children:"Full-Scope Commercial and Multi-Family Construction — From Permit to Final Inspection"})]})}),(0,s.jsxs)("div",{className:"max-w-6xl mx-auto px-6 py-16 space-y-16",children:[(0,s.jsx)("section",{children:(0,s.jsx)("p",{className:"text-lg text-slate-700 leading-relaxed max-w-3xl",children:"Complete general contracting for commercial and multi-family projects. We manage the full construction lifecycle — coordination, scheduling, subcontractors, procurement, and quality control — so you can focus on your business."})}),(0,s.jsxs)("div",{className:"grid md:grid-cols-2 gap-8",children:[(0,s.jsxs)("div",{className:"bg-slate-50 rounded-2xl p-8 border border-slate-100",children:[(0,s.jsx)("div",{className:"p-2 bg-[#1a4b8c]/10 rounded-lg w-fit mb-4",children:(0,s.jsx)(n,{className:"w-5 h-5 text-[#1a4b8c]"})}),(0,s.jsx)("h2",{className:"text-xl font-bold text-slate-900 mb-4",children:"Services"}),(0,s.jsx)("ul",{className:"space-y-3",children:["New construction (ground-up)","Building additions and expansions","Structural renovations","Facade upgrades","ADA compliance updates","Fire/water damage restoration coordination"].map(e=>(0,s.jsxs)("li",{className:"flex items-start gap-2",children:[(0,s.jsx)(i.Z,{className:"w-4 h-4 text-[#2563eb] mt-1 flex-shrink-0"}),(0,s.jsx)("span",{className:"text-slate-700",children:e})]},e))})]}),(0,s.jsxs)("div",{className:"bg-slate-50 rounded-2xl p-8 border border-slate-100",children:[(0,s.jsx)("div",{className:"p-2 bg-[#1a4b8c]/10 rounded-lg w-fit mb-4",children:(0,s.jsx)(c.Z,{className:"w-5 h-5 text-[#1a4b8c]"})}),(0,s.jsx)("h2",{className:"text-xl font-bold text-slate-900 mb-4",children:"Project Types"}),(0,s.jsx)("ul",{className:"space-y-3",children:["Apartment complexes","Commercial buildings","Multi-family developments","Mixed-use properties","Industrial facilities"].map(e=>(0,s.jsxs)("li",{className:"flex items-start gap-2",children:[(0,s.jsx)(i.Z,{className:"w-4 h-4 text-[#2563eb] mt-1 flex-shrink-0"}),(0,s.jsx)("span",{className:"text-slate-700",children:e})]},e))})]})]}),(0,s.jsxs)("section",{className:"bg-[#1a4b8c]/5 rounded-2xl p-8 border border-[#1a4b8c]/20",children:[(0,s.jsx)("h2",{className:"text-xl font-bold text-slate-900 mb-4",children:"We Handle Everything"}),(0,s.jsx)("div",{className:"flex flex-wrap gap-3",children:["Permits and inspections","Subcontractors (concrete, plumbing, electrical, HVAC)","Material procurement","Daily coordination","Documentation and closeout"].map(e=>(0,s.jsx)("span",{className:"px-4 py-2 bg-white border border-slate-200 rounded-full text-sm text-slate-700 font-medium",children:e},e))})]}),(0,s.jsxs)("section",{className:"bg-[#1a4b8c] rounded-2xl p-10 text-center",children:[(0,s.jsx)("h2",{className:"text-2xl font-bold text-white mb-3",children:"Ready to Build?"}),(0,s.jsx)("p",{className:"text-slate-200 mb-6 max-w-lg mx-auto",children:"Get a comprehensive bid for your commercial or multi-family construction project."}),(0,s.jsxs)(r.default,{href:"/get-a-quote",className:"inline-flex items-center gap-2 bg-white text-[#1a4b8c] font-semibold px-8 py-4 rounded-xl hover:bg-slate-100 transition-colors",children:["Request a General Contracting Bid",(0,s.jsx)(d.Z,{className:"w-5 h-5"})]})]})]})]})}}},function(e){e.O(0,[231,971,23,744],function(){return e(e.s=1649)}),_N_E=e.O()}]);
