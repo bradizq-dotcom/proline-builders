@@ -4,10 +4,10 @@ import { Phone, Mail, MapPin, Menu, X, ChevronDown, Shield, HardHat, Building2, 
 import Link from 'next/link'
 
 const featuredProjects = [
-  { name: 'Mirador at River City', location: 'Jacksonville, FL', type: 'Apartment Complex Re-roofing', scope: '4 Buildings', budget: '$450K', img: '/images/mirador.jpg' },
-  { name: 'The Avant at Pembroke Pines', location: 'Pembroke Pines, FL', type: 'Apartment Complex', scope: 'Full GC', budget: '$1.1M', img: '/images/avant-pembroke.jpg' },
-  { name: 'Reunion Crossing', location: 'Kissimmee, FL', type: 'Townhome Complex', scope: 'Full GC', budget: '$890K', img: '/images/reunion-crossing.jpg' },
-  { name: 'Polo Glen', location: 'Rockledge, FL', type: 'Multi-building Roofing', scope: 'Roofing Only', budget: '$320K', img: '/images/polo-glen.jpg' },
+  { name: 'Mirador at River City', location: 'Jacksonville, FL', type: 'Apartment Complex Re-roofing', scope: '4 Buildings', img: '/images/mirador.jpg' },
+  { name: 'The Avant at Pembroke Pines', location: 'Pembroke Pines, FL', type: 'Apartment Complex', scope: 'Full GC', img: '/images/avant-pembroke.jpg' },
+  { name: 'Reunion Crossing', location: 'Kissimmee, FL', type: 'Townhome Complex', scope: 'Full GC', img: '/images/reunion-crossing.jpg' },
+  { name: 'Polo Glen', location: 'Rockledge, FL', type: 'Multi-building Roofing', scope: 'Roofing Only', img: '/images/polo-glen.jpg' },
 ]
 
 const services = [
@@ -132,7 +132,7 @@ export default function Home() {
                 <div className="h-48 relative overflow-hidden">
                   <img src={p.img} alt={p.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute top-3 right-3 bg-blue-700 text-white text-xs font-bold px-3 py-1 rounded-sm uppercase">
-                    {p.budget}
+                    {p.scope}
                   </div>
                 </div>
                 <div className="p-6">
@@ -226,7 +226,7 @@ export default function Home() {
           <div className="space-y-4">
             {[
               { q: "What types of projects do you take on?", a: "We specialize in commercial and multi-family projects — apartment complexes, HOAs, property managers, and developers. Our contracts typically range from $50K to $10M+." },
-              { q: "What is your minimum project size?", a: "Our minimum project size is $50,000. We focus on work that requires professional coordination, permitting, and execution — not small residential jobs." },
+              { q: "What is your minimum project size?", a: "We work with commercial and multi-family projects of all sizes. Scope and contract terms are discussed during the proposal phase." },
               { q: "Do you handle permitting?", a: "Yes. We manage the full permitting process — permit acquisition, variance handling, and city inspection coordination are all part of our standard project service." },
               { q: "What areas do you serve?", a: "We work across Florida and have active projects in Nashville, TN. Service area depends on project scope and timeline." },
               { q: "How long does the process take?", a: "Timeline varies by project. A typical re-roofing project takes 2-6 months from contract to completion. New construction and full GC projects run longer depending on scope." },
@@ -267,7 +267,7 @@ export default function Home() {
       {/* Minimum Project Notice */}
       <div className="bg-slate-900 text-white py-6">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <p className="text-slate-400 text-sm">Our minimum project size is <span className="text-white font-bold">$50,000</span>. We specialize in commercial and multi-family work — property managers, developers, HOAs, and apartment complex owners.</p>
+          <p className="text-slate-400 text-sm">We specialize in commercial and multi-family work — property managers, developers, HOAs, and apartment complex owners.</p>
         </div>
       </div>
 

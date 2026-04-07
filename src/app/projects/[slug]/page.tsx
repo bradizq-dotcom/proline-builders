@@ -41,7 +41,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { label: 'Budget', value: project.budget },
               { label: 'Timeline', value: project.timeline },
               { label: 'Started', value: project.completed },
               { label: 'Scope', value: project.scope },
@@ -73,7 +72,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             <div className="space-y-3 text-sm">
               <div className="flex justify-between"><span className="text-slate-500">Client</span><span className="font-semibold text-slate-900">{project.client}</span></div>
               <div className="flex justify-between"><span className="text-slate-500">Location</span><span className="font-semibold text-slate-900">{project.location}</span></div>
-              <div className="flex justify-between"><span className="text-slate-500">Contract</span><span className="font-semibold text-slate-900">{project.budget}</span></div>
               <div className="flex justify-between"><span className="text-slate-500">Timeline</span><span className="font-semibold text-slate-900">{project.timeline}</span></div>
               <div className="flex justify-between"><span className="text-slate-500">Completed</span><span className="font-semibold text-slate-900">{project.completed}</span></div>
             </div>

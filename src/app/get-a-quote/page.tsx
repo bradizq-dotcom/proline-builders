@@ -50,11 +50,11 @@ export default function GetAQuote() {
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-8">
           <h1 className="font-display text-4xl md:text-5xl font-bold text-slate-900 uppercase">Request a Bid</h1>
-          <p className="text-slate-500 mt-3">Commercial and multi-family projects only. Minimum project size: 50,000.</p>
+          
         </div>
         <div className="bg-blue-50 border border-blue-200 rounded-sm p-4 mb-8 flex items-start gap-3">
           <AlertCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-          <p className="text-sm text-blue-800"><strong>Note:</strong> Our minimum project size is <strong>50,000</strong>. We specialize in commercial and multi-family work.</p>
+          
         </div>
         <div className="flex items-center justify-between mb-10 bg-white rounded-sm p-1 border border-gray-100">
           {steps.map((s, i) => (<div key={i} className={"flex-1 text-center py-2 text-xs font-bold uppercase tracking-wider rounded-sm transition-all " + (i === step ? 'bg-blue-700 text-white' : i < step ? 'bg-green-100 text-green-700' : 'text-gray-400')}>{s}</div>))}
@@ -117,10 +117,8 @@ export default function GetAQuote() {
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">Estimated Budget Range *</label>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">{budgets.map(b => (<button key={b} type="button" onClick={() => setForm(f => ({...f, budget: b}))} className={"py-3 px-4 rounded-sm text-sm font-semibold border-2 transition-all " + (form.budget === b ? 'bg-blue-700 border-blue-700 text-white' : 'border-gray-200 text-slate-600 hover:border-blue-400')}>{b}</button>))}</div>
-              {form.budget && !form.budget.includes('$1M') && !form.budget.includes('$500K') && !form.budget.includes('$250K') && (
-                <p className="text-xs text-amber-600 mt-2 flex items-center gap-1"><AlertCircle className="w-3 h-3" />We typically take on projects starting at 50K+. You may still submit — we will review and discuss options.</p>
-              )}
-              <p className="text-xs text-slate-400 mt-2">Minimum project size: 50,000</p>
+              
+              
             </div>
           </div>)}
           {step === 3 && (<div className="space-y-5">

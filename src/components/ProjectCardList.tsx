@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { projectsData } from './projectsData'
 
 export function ProjectCardList() {
-  const [filter, setFilter] = useState({ location: '', type: '', budget: '' })
+  const [filter, setFilter] = useState({ location: '', type: '' })
 
   const allLocations = Array.from(new Set(projectsData.map(p => p.location.split(',')[1]?.trim() || p.location))).filter(Boolean)
   const allTypes = Array.from(new Set(projectsData.map(p => p.type)))
@@ -12,12 +12,6 @@ export function ProjectCardList() {
   const filtered = projectsData.filter(p => {
     if (filter.location && !p.location.includes(filter.location)) return false
     if (filter.type && p.type !== filter.type) return false
-    if (filter.budget) {
-      const b = parseInt(p.budget.replace(/[^0-9]/g,''))
-      if (filter.budget === 'under300k' && b >= 300) return false
-      if (filter.budget === '300k-600k' && (b < 300 || b >= 600)) return false
-      if (filter.budget === 'over600k' && b < 600) return false
-    }
     return true
   })
 
@@ -32,13 +26,7 @@ export function ProjectCardList() {
           <option value="">All Types</option>
           {allTypes.map(t => <option key={t} value={t}>{t}</option>)}
         </select>
-        <select onChange={e => setFilter(f => ({...f, budget: e.target.value}))} className="border rounded px-3 py-2 text-sm">
-          <option value="">All Budgets</option>
-          <option value="under300k">Under $300K</option>
-          <option value="300k-600k">$300K–$600K</option>
-          <option value="over600k">$600K+</option>
-        </select>
-      </div>
+        </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.length === 0 && <p className="text-slate-500 col-span-full text-center py-12">No projects match your filters.</p>}
         {filtered.map(p => (
@@ -54,7 +42,7 @@ export function ProjectCardList() {
                 <p className="text-slate-500 text-sm mb-3">📍 {p.location}</p>
                 <div className="flex justify-between text-xs font-semibold">
                   <span className="text-slate-700">🏗️ {p.scope}</span>
-                  <span className="text-blue-700">{p.budget}</span>
+                  <span className="text-blue-700">{p.completed}</span>
                 </div>
               </div>
             </div>
