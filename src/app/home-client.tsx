@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Menu, X, ChevronDown, Shield, HardHat, Building2, 
 import Link from 'next/link'
 
 const featuredProjects = [
-  { name: 'Mirador at River City', location: 'Jacksonville, FL', type: 'Apartment Complex Re-roofing', scope: '10+ Buildings', img: '/images/mirador.jpg' },
+  { name: 'The Braxton', location: 'Palm Bay, FL', type: 'New Construction', scope: 'New Construction', img: '/images/braxton.jpg' },
   { name: 'The Avant at Pembroke Pines', location: 'Pembroke Pines, FL', type: 'Roofing', scope: 'Roofing', img: '/images/avant-pembroke.jpg' },
   { name: 'Reunion Crossing Townhomes', location: 'Kissimmee, FL', type: 'Interiors', scope: 'Interiors', img: '/images/reunion-crossing.jpg' },
   { name: 'Polo Glen Apartment Homes', location: 'Rockledge, FL', type: 'Interiors', scope: 'Interiors', img: '/images/polo-glen.jpg' },
