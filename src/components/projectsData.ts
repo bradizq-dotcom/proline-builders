@@ -9,7 +9,7 @@ export const projectsData = [
     timeline: 'TBD',
     completed: 'In Progress',
     client: 'Olympus Property',
-    img: '/images/mirador.jpg',
+    img: '/images/mirador-roof.jpg',
     challenges: '',
     solutions: '',
   },
