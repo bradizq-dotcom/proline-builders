@@ -52,9 +52,9 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { label: 'Timeline', value: project.timeline },
-              { label: 'Started', value: project.completed },
+              { label: 'Completed', value: project.completed },
               { label: 'Scope', value: project.scope },
-            ].map(stat => (
+            ].filter(stat => stat.value && stat.value !== 'TBD').map(stat => (
               <div key={stat.label} className="bg-white rounded p-4 border text-center">
                 <p className="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">{stat.label}</p>
                 <p className="text-slate-900 font-bold">{stat.value}</p>
@@ -62,17 +62,21 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             ))}
           </div>
 
+          {project.challenges && <>
           {/* Challenge */}
           <div className="bg-white rounded p-6 border-l-4 border-red-400">
             <h2 className="text-sm font-bold text-red-500 uppercase tracking-widest mb-2">Challenge</h2>
             <p className="text-slate-700 leading-relaxed">{project.challenges}</p>
           </div>
+          </>}
 
+          {project.solutions && <>
           {/* Solution */}
           <div className="bg-white rounded p-6 border-l-4 border-blue-600">
             <h2 className="text-sm font-bold text-blue-700 uppercase tracking-widest mb-2">Solution</h2>
             <p className="text-slate-700 leading-relaxed">{project.solutions}</p>
           </div>
+          </>}
         </div>
 
         {/* Sidebar */}
@@ -82,7 +86,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             <div className="space-y-3 text-sm">
               <div className="flex justify-between"><span className="text-slate-500">Client</span><span className="font-semibold text-slate-900">{project.client}</span></div>
               <div className="flex justify-between"><span className="text-slate-500">Location</span><span className="font-semibold text-slate-900">{project.location}</span></div>
-              <div className="flex justify-between"><span className="text-slate-500">Timeline</span><span className="font-semibold text-slate-900">{project.timeline}</span></div>
+              {project.timeline && project.timeline !== 'TBD' && <div className="flex justify-between"><span className="text-slate-500">Timeline</span><span className="font-semibold text-slate-900">{project.timeline}</span></div>}
               <div className="flex justify-between"><span className="text-slate-500">Completed</span><span className="font-semibold text-slate-900">{project.completed}</span></div>
             </div>
           </div>
