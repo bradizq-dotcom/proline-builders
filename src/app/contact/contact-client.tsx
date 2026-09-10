@@ -35,7 +35,7 @@ export default function ContactPage() {
     ]
     const subject = encodeURIComponent(`Website Contact — ${form.name}`)
     const body = encodeURIComponent(lines.join('\n'))
-    return `mailto:bradizq@prolinebuilders.com?subject=${subject}&body=${body}`
+    return `mailto:pete@prolinebuilders.com?subject=${subject}&body=${body}`
   }
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -75,23 +75,23 @@ export default function ContactPage() {
                 <h2 className="font-display text-2xl font-bold text-slate-900 uppercase mb-6">Contact Information</h2>
 
                 <div className="space-y-5">
-                  <a href="tel:7276422953" className="flex items-start gap-4 group">
+                  <a href="tel:9544480298" className="flex items-start gap-4 group">
                     <div className="w-10 h-10 bg-blue-700 rounded-sm flex items-center justify-center flex-shrink-0">
                       <Phone className="w-5 h-5 text-white" />
                     </div>
                     <div>
                       <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Phone</p>
-                      <p className="text-slate-900 font-semibold group-hover:text-blue-700 transition-colors">(727) 642-2953</p>
+                      <p className="text-slate-900 font-semibold group-hover:text-blue-700 transition-colors">(954) 448-0298</p>
                     </div>
                   </a>
 
-                  <a href="mailto:bradizq@prolinebuilders.com" className="flex items-start gap-4 group">
+                  <a href="mailto:pete@prolinebuilders.com" className="flex items-start gap-4 group">
                     <div className="w-10 h-10 bg-blue-700 rounded-sm flex items-center justify-center flex-shrink-0">
                       <Mail className="w-5 h-5 text-white" />
                     </div>
                     <div>
                       <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Email</p>
-                      <p className="text-slate-900 font-semibold group-hover:text-blue-700 transition-colors">bradizq@prolinebuilders.com</p>
+                      <p className="text-slate-900 font-semibold group-hover:text-blue-700 transition-colors">pete@prolinebuilders.com</p>
                     </div>
                   </a>
 
@@ -129,9 +129,9 @@ export default function ContactPage() {
                   Get a Detailed Quote <ArrowRight className="w-5 h-5" />
                 </Link>
                 <div className="mt-4">
-                  <a href="tel:7276422953"
+                  <a href="tel:9544480298"
                     className="inline-flex items-center gap-2 text-blue-200 hover:text-white text-sm font-semibold transition-colors">
-                    <Phone className="w-4 h-4" /> Or call (727) 642-2953
+                    <Phone className="w-4 h-4" /> Or call (954) 448-0298
                   </a>
                 </div>
               </div>
@@ -239,7 +239,7 @@ export default function ContactPage() {
               className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-sm font-bold text-sm uppercase tracking-wider transition-all hover:scale-105">
               Full Quote Request <ArrowRight className="w-5 h-5" />
             </Link>
-            <a href="tel:7276422953"
+            <a href="tel:9544480298"
               className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white px-6 py-4 rounded-sm font-bold text-sm uppercase tracking-wider transition-all">
               <Phone className="w-5 h-5" />
             </a>
