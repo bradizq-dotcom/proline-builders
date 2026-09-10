@@ -81,7 +81,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-blue-900 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-blue-400 text-xs">© 2026 Pro-Line Builders, LLC. All Rights Reserved. Licenses: CGC / CCC</p>
+          <p className="text-blue-400 text-xs">© 2026 Pro-Line Builders, LLC. All Rights Reserved. Licensed: CGC #051937 · CCC #1327345</p>
           <div className="flex items-center gap-6">
             <a href="tel:7276422953" className="text-blue-300 hover:text-white text-xs transition-colors">(727) 642-2953</a>
             <a href="mailto:bradizq@prolinebuilders.com" className="text-blue-300 hover:text-white text-xs transition-colors">bradizq@prolinebuilders.com</a>
