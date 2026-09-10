@@ -72,9 +72,9 @@ export default function Nav() {
             className="flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-sm font-bold text-sm uppercase tracking-wider transition-all">
             Get a Quote <ArrowRight className="w-4 h-4" />
           </Link>
-          <a href="tel:7276422953"
+          <a href="tel:9544480298"
             className={`flex items-center gap-2 font-semibold text-sm transition-colors ${scrolled ? 'text-blue-900' : 'text-slate-700'}`}>
-            <Phone className="w-4 h-4" /> (727) 642-2953
+            <Phone className="w-4 h-4" /> (954) 448-0298
           </a>
         </div>
 
@@ -110,8 +110,8 @@ export default function Nav() {
               className="block w-full text-center bg-blue-700 text-white font-bold py-3 rounded-sm text-sm uppercase tracking-wider mb-3">
               Get a Quote
             </Link>
-            <a href="tel:7276422953" className="flex items-center justify-center gap-2 text-slate-700 font-semibold text-sm">
-              <Phone className="w-4 h-4" /> (727) 642-2953
+            <a href="tel:9544480298" className="flex items-center justify-center gap-2 text-slate-700 font-semibold text-sm">
+              <Phone className="w-4 h-4" /> (954) 448-0298
             </a>
           </div>
         </div>
