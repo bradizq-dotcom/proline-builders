@@ -39,11 +39,11 @@ export default function AboutPage() {
           </div>
           <div className="flex items-center gap-4">
             <a
-              href="tel:7276422953"
+              href="tel:9544480298"
               className="hidden sm:flex items-center gap-2 text-sm text-white/90 hover:text-white transition-colors"
             >
               <Phone className="w-4 h-4" />
-              (727) 642-2953
+              (954) 448-0298
             </a>
           </div>
         </div>
@@ -220,10 +220,10 @@ export default function AboutPage() {
               <div>
                 <p className="text-sm text-slate-500 mb-1">Phone</p>
                 <a
-                  href="tel:7276422953"
+                  href="tel:9544480298"
                   className="font-semibold text-slate-900 hover:text-[#2563eb] transition-colors"
                 >
-                  (727) 642-2953
+                  (954) 448-0298
                 </a>
               </div>
             </div>
@@ -234,10 +234,10 @@ export default function AboutPage() {
               <div>
                 <p className="text-sm text-slate-500 mb-1">Email</p>
                 <a
-                  href="mailto:bradizq@prolinebuilders.com"
+                  href="mailto:pete@prolinebuilders.com"
                   className="font-semibold text-slate-900 hover:text-[#2563eb] transition-colors"
                 >
-                  bradizq@prolinebuilders.com
+                  pete@prolinebuilders.com
                 </a>
               </div>
             </div>
