@@ -208,9 +208,9 @@ export default function Home() {
               className="flex items-center gap-2 bg-white text-blue-700 hover:bg-blue-50 px-8 py-4 rounded-sm font-bold text-sm uppercase tracking-wider transition-all hover:scale-105">
               Get a Quote <ArrowRight className="w-5 h-5" />
             </Link>
-            <a href="tel:7276422953"
+            <a href="tel:9544480298"
               className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 text-white px-8 py-4 rounded-sm font-bold text-sm uppercase tracking-wider transition-all">
-              <Phone className="w-5 h-5" /> (727) 642-2953
+              <Phone className="w-5 h-5" /> (954) 448-0298
             </a>
           </div>
         </div>
