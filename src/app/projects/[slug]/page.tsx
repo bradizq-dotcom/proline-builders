@@ -1,9 +1,19 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import type { Metadata } from 'next'
 import { getProjectBySlug, getProjects } from '@/components/projectsData'
 
 export function generateStaticParams() {
   return getProjects().map(p => ({ slug: p.slug }))
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const project = getProjectBySlug(params.slug)
+  if (!project) return { title: 'Project | Pro-Line Builders' }
+  return {
+    title: `${project.name} | Pro-Line Builders`,
+    description: `${project.type} project in ${project.location} by Pro-Line Builders — commercial and multi-family general contracting across Florida.`,
+  }
 }
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
