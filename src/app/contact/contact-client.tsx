@@ -100,8 +100,8 @@ export default function ContactPage() {
                       <MapPin className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Office</p>
-                      <p className="text-slate-900 font-semibold">Palm Harbor, FL</p>
+                      <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Service Area</p>
+                      <p className="text-slate-900 font-semibold">Florida — Statewide</p>
                       <p className="text-slate-500 text-sm">Serving All of Florida</p>
                     </div>
                   </div>
