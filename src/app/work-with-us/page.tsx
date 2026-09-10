@@ -10,7 +10,6 @@ const availabilities = ['Available Now', 'Within 30 Days', '60+ Days']
 
 export default function WorkWithUs() {
   const [step, setStep] = useState(0)
-  const [submitting, setSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState({
     companyName: '', contactName: '', phone: '', email: '', serviceArea: '',
@@ -31,7 +30,28 @@ export default function WorkWithUs() {
   const toggleTrade = (t: string) => { setForm(f => ({...f, trade: f.trade.includes(t) ? f.trade.filter(x => x !== t) : [...f.trade, t]})) }
   const handleCOI = (e: React.ChangeEvent<HTMLInputElement>) => { if (e.target.files?.[0]) setForm(f => ({...f, coiFile: e.target.files[0]})) }
   const handleW9 = (e: React.ChangeEvent<HTMLInputElement>) => { if (e.target.files?.[0]) setForm(f => ({...f, w9File: e.target.files[0]})) }
-  const handleSubmit = (e: React.FormEvent) => { e.preventDefault(); setSubmitting(true); setTimeout(() => { setSubmitting(false); setSubmitted(true) }, 1500) }
+  const buildMailto = () => {
+    const lines = [
+      `Company: ${form.companyName}`,
+      `Contact: ${form.contactName}`,
+      `Phone: ${form.phone}`,
+      `Email: ${form.email}`,
+      `Service Area: ${form.serviceArea || '—'}`,
+      `Trades: ${form.trade.join(', ')}`,
+      `Crew Size: ${form.crewSize}`,
+      `Typical Project Size: ${form.typicalProjectSize}`,
+      `Years in Business: ${form.yearsInBusiness || '—'}`,
+      `License Type: ${form.licenseType}`,
+      `License Number: ${form.licenseNumber}`,
+      `Experience: ${form.experience || '—'}`,
+      `Notable Clients: ${form.notableClients || '—'}`,
+      `Availability: ${form.availability}`,
+    ]
+    const subject = encodeURIComponent(`Subcontractor Application — ${form.companyName}`)
+    const body = encodeURIComponent(lines.join('\n'))
+    return `mailto:bradizq@prolinebuilders.com?subject=${subject}&body=${body}`
+  }
+  const handleSubmit = (e: React.FormEvent) => { e.preventDefault(); window.location.href = buildMailto(); setSubmitted(true) }
 
 
   if (submitted) {
@@ -39,9 +59,9 @@ export default function WorkWithUs() {
       <div className="min-h-screen bg-slate-50 flex items-center justify-center px-6 pt-24 pb-16">
         <div className="max-w-lg text-center">
           <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6"><CheckCircle2 className="w-10 h-10 text-green-600" /></div>
-          <h1 className="font-display text-4xl font-bold text-slate-900 uppercase mb-4">Application Received</h1>
-          <p className="text-slate-500 mb-2">Thank you, {form.contactName}. We have received your application and will review it shortly.</p>
-          <p className="text-slate-400 text-sm mb-8">Approved subcontractors will be contacted as projects become available across Florida and Nashville.</p>
+          <h1 className="font-display text-4xl font-bold text-slate-900 uppercase mb-4">Check Your Email</h1>
+          <p className="text-slate-500 mb-2">Thanks, {form.contactName} — your email app should have opened with your application pre-filled. Just hit send and we'll review it shortly.</p>
+          <p className="text-slate-400 text-sm mb-8">Email app didn't open? <a href={buildMailto()} className="text-blue-700 font-semibold hover:underline">Click here to open it manually</a>. Approved subcontractors will be contacted as projects become available across Florida and Nashville.</p>
           <a href="/" className="text-blue-700 font-semibold text-sm uppercase tracking-wider hover:underline">Back to Home</a>
         </div>
       </div>
@@ -126,8 +146,8 @@ export default function WorkWithUs() {
               <div className="flex justify-between text-sm"><span className="text-slate-500">Typical Project</span><span className="font-semibold text-slate-900">{form.typicalProjectSize}</span></div>
               <div className="flex justify-between text-sm"><span className="text-slate-500">Availability</span><span className="font-semibold text-slate-900">{form.availability}</span></div>
             </div>
-            <div className="bg-blue-50 border border-blue-200 rounded-sm p-4 text-sm text-blue-800"><p>Approved subcontractors will be contacted as projects become available across Florida and Nashville.</p></div>
-            <button type="submit" disabled={submitting} className="w-full bg-blue-700 hover:bg-blue-800 disabled:bg-blue-400 text-white font-bold py-4 rounded-sm uppercase text-sm tracking-wider transition-all flex items-center justify-center gap-2">{submitting ? 'Submitting...' : <>Submit Application <ArrowRight className="w-4 h-4" /></>}</button>
+            <div className="bg-blue-50 border border-blue-200 rounded-sm p-4 text-sm text-blue-800"><p>Clicking <strong>Submit Application</strong> opens your email app with your details pre-filled — just hit send. Approved subcontractors will be contacted as projects become available across Florida and Nashville.</p></div>
+            <button type="submit" className="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-4 rounded-sm uppercase text-sm tracking-wider transition-all flex items-center justify-center gap-2">Submit Application <ArrowRight className="w-4 h-4" /></button>
           </div>)}
           <div className="flex justify-between mt-8 pt-6 border-t border-gray-100">
             {step > 0 ? <button type="button" onClick={back} className="flex items-center gap-2 text-slate-500 hover:text-slate-700 font-semibold text-sm uppercase tracking-wider"><ArrowLeft className="w-4 h-4" /> Back</button> : <div />}
