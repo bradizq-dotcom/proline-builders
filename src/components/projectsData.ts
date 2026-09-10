@@ -37,7 +37,7 @@ export const projectsData = [
     timeline: 'TBD',
     completed: '2024',
     client: 'BH MANAGEMENT',
-    img: '/images/polo-glen.jpg',
+    img: '/images/polo-glen-interiors.jpg',
     challenges: '',
     solutions: '',
   },
