@@ -1,5 +1,12 @@
 import { ProjectCardList } from '@/components/ProjectCardList'
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Our Projects | Pro-Line Builders',
+  description:
+    'Completed commercial and multi-family projects across Florida and Nashville — roofing, interiors, and full general contracting for apartments, HOAs, and developers.',
+}
 
 export default function ProjectsPage() {
   return (
