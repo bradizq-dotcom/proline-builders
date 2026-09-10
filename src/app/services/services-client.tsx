@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Footer from '@/components/Footer'
-import { Shield, Building2, ClipboardCheck, PaintRoller, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { Shield, Building2, ClipboardCheck, PaintRoller, Home, Camera, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 const services = [
   {
@@ -34,6 +34,36 @@ const services = [
       '$50K–$5M project expertise',
     ],
     href: '/services/general-contracting',
+  },
+  {
+    slug: 'exterior-renovations',
+    icon: Home,
+    title: 'Exterior Renovations',
+    tagline: 'Building Envelope',
+    description:
+      'Siding, exterior paint, windows, and trim for multi-family communities and commercial buildings. Full envelope refreshes phased building by building, so occupied properties stay operational while we work.',
+    highlights: [
+      'Siding replacement & repair',
+      'Exterior painting & coatings',
+      'Window & trim replacement',
+      'Phased for occupied properties',
+    ],
+    href: '/services/exterior-renovations',
+  },
+  {
+    slug: 'drone-roof-surveys',
+    icon: Camera,
+    title: 'Drone Roof Surveys',
+    tagline: 'Aerial Assessment',
+    description:
+      'Aerial roof surveys with high-resolution photo documentation. Know exactly what your roofs need — and what they don\u2019t — before you budget the CapEx. The same survey process behind every Pro-Line reroof.',
+    highlights: [
+      'High-resolution aerial imagery',
+      'Photo-documented condition reports',
+      'CapEx planning support',
+      'Multi-building portfolio coverage',
+    ],
+    href: '/services/drone-roof-surveys',
   },
   {
     slug: 'project-management',
