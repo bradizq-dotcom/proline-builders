@@ -49,7 +49,7 @@ export default function WorkWithUs() {
     ]
     const subject = encodeURIComponent(`Subcontractor Application — ${form.companyName}`)
     const body = encodeURIComponent(lines.join('\n'))
-    return `mailto:bradizq@prolinebuilders.com?subject=${subject}&body=${body}`
+    return `mailto:pete@prolinebuilders.com?subject=${subject}&body=${body}`
   }
   const handleSubmit = (e: React.FormEvent) => { e.preventDefault(); window.location.href = buildMailto(); setSubmitted(true) }
 
