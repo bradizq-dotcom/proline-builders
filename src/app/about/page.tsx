@@ -248,7 +248,7 @@ export default function AboutPage() {
               <div>
                 <p className="text-sm text-slate-500 mb-1">Location</p>
                 <p className="font-semibold text-slate-900">
-                  Palm Harbor, FL — Serving All of Florida
+                  Florida — Serving Statewide
                 </p>
               </div>
             </div>
@@ -263,7 +263,7 @@ export default function AboutPage() {
             &copy; {new Date().getFullYear()} Pro-Line Builders, LLC. All rights
             reserved.
           </p>
-          <p className="text-sm">Licensed CGC &amp; CCC — Palm Harbor, FL</p>
+          <p className="text-sm">Licensed CGC &amp; CCC — Florida</p>
         </div>
       </footer>
     </main>
