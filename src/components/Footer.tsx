@@ -28,7 +28,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 text-blue-200 text-sm">
               <MapPin className="w-4 h-4 text-blue-400" />
-              Palm Harbor, FL — Serving All of Florida
+              Florida — Serving Statewide
             </div>
           </div>
 
