@@ -27,6 +27,8 @@ export default function Nav() {
   const services = [
     { label: 'Roofing', href: '/services/roofing' },
     { label: 'General Contracting', href: '/services/general-contracting' },
+    { label: 'Exterior Renovations', href: '/services/exterior-renovations' },
+    { label: 'Drone Roof Surveys', href: '/services/drone-roof-surveys' },
     { label: 'Project Management', href: '/services/project-management' },
     { label: 'Interior & Finishes', href: '/services/interior-finishes' },
   ]
