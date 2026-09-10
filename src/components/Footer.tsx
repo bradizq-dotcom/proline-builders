@@ -61,15 +61,15 @@ export default function Footer() {
             <h4 className="font-bold text-sm uppercase tracking-widest text-blue-300 mb-4">Contact</h4>
             <ul className="space-y-3">
               <li>
-                <a href="tel:7276422953" className="flex items-center gap-2 text-blue-100 hover:text-white text-sm transition-colors">
+                <a href="tel:9544480298" className="flex items-center gap-2 text-blue-100 hover:text-white text-sm transition-colors">
                   <Phone className="w-4 h-4 text-blue-400" />
-                  (727) 642-2953
+                  (954) 448-0298
                 </a>
               </li>
               <li>
-                <a href="mailto:bradizq@prolinebuilders.com" className="flex items-center gap-2 text-blue-100 hover:text-white text-sm transition-colors">
+                <a href="mailto:pete@prolinebuilders.com" className="flex items-center gap-2 text-blue-100 hover:text-white text-sm transition-colors">
                   <Mail className="w-4 h-4 text-blue-400" />
-                  bradizq@prolinebuilders.com
+                  pete@prolinebuilders.com
                 </a>
               </li>
             </ul>
@@ -83,8 +83,8 @@ export default function Footer() {
         <div className="border-t border-blue-900 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-blue-400 text-xs">© 2026 Pro-Line Builders, LLC. All Rights Reserved. Licensed: CGC #051937 · CCC #1327345</p>
           <div className="flex items-center gap-6">
-            <a href="tel:7276422953" className="text-blue-300 hover:text-white text-xs transition-colors">(727) 642-2953</a>
-            <a href="mailto:bradizq@prolinebuilders.com" className="text-blue-300 hover:text-white text-xs transition-colors">bradizq@prolinebuilders.com</a>
+            <a href="tel:9544480298" className="text-blue-300 hover:text-white text-xs transition-colors">(954) 448-0298</a>
+            <a href="mailto:pete@prolinebuilders.com" className="text-blue-300 hover:text-white text-xs transition-colors">pete@prolinebuilders.com</a>
           </div>
         </div>
       </div>
