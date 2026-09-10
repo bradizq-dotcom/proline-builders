@@ -5,9 +5,24 @@ import Footer from '@/components/Footer'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://proline-builders.vercel.app'),
   title: 'Pro-Line Builders | Commercial & Multi-Family General Contractors Florida',
   description: 'Family-owned general contracting serving Florida. Specializing in $50K–$10M+ commercial, multi-family, and apartment projects. Roofing, general contracting, and project management.',
   keywords: 'commercial contractor Florida, multi-family contractor, apartment roofing, general contractor Florida, CGC CCC licensed',
+  openGraph: {
+    title: 'Pro-Line Builders | Commercial & Multi-Family General Contractors Florida',
+    description: 'Roofing, general contracting, and project management for Florida\'s commercial and multi-family sector. Licensed CGC #051937 & CCC #1327345.',
+    url: 'https://proline-builders.vercel.app',
+    siteName: 'Pro-Line Builders',
+    type: 'website',
+    images: [{ url: '/images/hero-construction.jpg', alt: 'Pro-Line Builders commercial construction' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pro-Line Builders | Commercial & Multi-Family General Contractors Florida',
+    description: 'Roofing, general contracting, and project management for Florida\'s commercial and multi-family sector.',
+    images: ['/images/hero-construction.jpg'],
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
