@@ -13,6 +13,13 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us | Pro-Line Builders",
+  description:
+    "Family-owned general contracting for Florida's commercial and multi-family sector. Licensed CGC #051937 and CCC #1327345. $50K–$10M+ projects.",
+};
 
 export default function AboutPage() {
   return (
